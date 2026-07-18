@@ -64,7 +64,7 @@ export default function Hero() {
           <div className="lg:col-span-5">
             <h1
               ref={titleRef}
-              className="font-serif text-[#0B1D33] text-3xl md:text-4xl lg:text-6xl leading-[1.2] font-bold tracking-tight"
+              className="font-serif text-[#0B1D33] text-3xl mt-3 md:text-4xl lg:text-6xl leading-[1.2] font-bold tracking-tight"
             >
               Patna's First <br />
               <span className="text-[#1E3A8A] text-4xl md:text-6xl lg:text-7xl block my-2 ">
@@ -103,7 +103,7 @@ export default function Hero() {
               <hr className="border-gray-200" />
 
               {/* Item 3 */}
-              <div className="flex items-start gap-2 group">
+              {/* <div className="flex items-start gap-2 group">
                 <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-amber-200 group-hover:scale-110 transition-transform duration-300">
                   <FaAward className="text-3xl" />
                 </div>
@@ -112,7 +112,7 @@ export default function Hero() {
                     Book your three free demo classes in Patna.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

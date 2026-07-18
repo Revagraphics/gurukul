@@ -41,10 +41,20 @@ export default function Navbar() {
           <img src={logo} alt="society" className="w-full h-full object-contain" />
         </a>
 
-        {/* Added Text */}
-        <span className="text-xl lg:text-2xl font-bold leading-tighter text-gray-900 whitespace-nowrap">
-          Society Gurukul
-        </span>
+        <div className="relative">
+    <span className="block text-2xl lg:text-4xl font-bold tracking-tighter text-gray-900 leading-none">
+      Society <span className="text-[#48525B]">Gurukul</span>
+    </span>
+    
+    {/* Beautiful Curved Bottom Line */}
+    <div className="absolute -bottom-1 left-0 w-full h-[6px] bg-[#48525B] rounded-full opacity-90"
+         style={{
+           borderBottomLeftRadius: '50%',
+           borderBottomRightRadius: '50%',
+           transform: 'scaleY(0.6)'
+         }}
+    />
+  </div>
       </div>
 
         {/* Desktop links */}

@@ -54,7 +54,7 @@ export default function FinalCta() {
                 key={c.label}
                 ref={addCtaRef}
                 href="#top"
-                className={`w-full flex items-center justify-start gap-2 font-sarif text-xs md:text-sm tracking-widest uppercase px-2 lg:px-7 py-4 rounded-md transition-colors duration-300 ${
+                className={`w-full flex items-center justify-start gap-2 font-sarif text-xs md:text-sm tracking-normal uppercase px-2 lg:px-4 py-4 rounded-md transition-colors duration-300 ${
                   i === 0
                     ? "bg-[#C9A227] text-[#0B1D33] hover:bg-[#E0BC4A]"
                     : "border border-[#FAF8F4]/30 text-[#FAF8F4] hover:border-[#C9A227] hover:text-[#C9A227]"
