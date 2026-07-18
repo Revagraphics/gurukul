@@ -32,14 +32,20 @@ export default function Navbar() {
           : "bg-gradient-to-b from-[#F8F0E3]/40 to-transparent py-6"
       }`}
     >
-      <div className="max-w-[90vw] mx-auto px-6 md:px-10 flex items-center justify-between">
+      <div className="max-w-[90vw] mx-auto px-1 md:px-10 flex items-center justify-between">
         {/* Logo */}
         
-        <div className="relative flex items-center">
-          <a className="flex cursor-hover items-center h-12 w-12 lg:h-28 lg:w-28 relative " href="#top">
-            <img src={logo} alt="society" />
-          </a>
-        </div>
+      <div className="relative flex cursor-pointer items-center lg:gap-0">
+        {/* Logo Container */}
+        <a className="flex cursor-hover items-center h-12 w-12 lg:h-28 lg:w-28 relative" href="#top">
+          <img src={logo} alt="society" className="w-full h-full object-contain" />
+        </a>
+
+        {/* Added Text */}
+        <span className="text-xl lg:text-2xl font-bold leading-tighter text-gray-900 whitespace-nowrap">
+          Society Gurukul
+        </span>
+      </div>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-9">
@@ -54,14 +60,14 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <a
             href="#contact"
             className="font-sarif text-xs tracking-widest cursor-hover uppercase text-[#0B1D33] bg-[#C9A227] px-5 py-2.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300"
           >
             Apply Now
           </a>
-        </div>
+        </div> */}
 
         {/* Mobile toggle */}
         <button
@@ -92,12 +98,12 @@ export default function Navbar() {
               {link}
             </a>
           ))}
-          <a
+          {/* <a
             href="#contact"
             className="font-sarif text-xs tracking-widest cursor-hover uppercase text-[#0B1D33] bg-[#C9A227] px-5 py-2.5 rounded-sm text-center"
           >
             Apply Now
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>

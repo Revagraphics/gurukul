@@ -29,7 +29,7 @@ $source = isset($data['source']) ? trim($data['source']) : 'website';
 // RECEIVER EMAILS (Update these)
 // =========================
 $recipients = [
-    'info@societygurukul.com', // Update to your official email
+    'info@societygurukul.com , sourabhnegi557@gmail.com', // Update to your official email
 ];
 
 // =========================

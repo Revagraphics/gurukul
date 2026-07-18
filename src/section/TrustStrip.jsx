@@ -113,14 +113,14 @@ export default function TrustStrip() {
             </div>
 
             {/* Part 2 */}
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <div className="text-[#C9A227] text-2xl mt-1">
                 <FaChalkboardTeacher />
               </div>
               <p className="font-serif text-base md:text-lg leading-relaxed">
                 Three free demo classes included
               </p>
-            </div>
+            </div> */}
 
             {/* Part 3 */}
             <div className="flex items-start gap-4">
@@ -128,7 +128,7 @@ export default function TrustStrip() {
                 <FaComments />
               </div>
               <p className="font-serif text-base md:text-lg leading-relaxed">
-                Free one-time counselling session
+                Free one-time counselling session with three demo classes
               </p>
             </div>
           </div>

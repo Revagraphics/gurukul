@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import CLASSROOM_IMAGE from "../assets/gurukul-3.jpg";
+import {
+  FaGraduationCap,
+  FaChartLine,
+  FaUsers,
+  FaAward,
+} from "react-icons/fa6";
 
 export default function Hero() {
   const titleRef = useRef(null);
@@ -58,31 +64,54 @@ export default function Hero() {
           <div className="lg:col-span-5">
             <h1
               ref={titleRef}
-              className="font-serif text-[#0B1D33] text-4xl md:text-5xl lg:text-6xl leading-[1.05] font-bold tracking-tight"
+              className="font-serif text-[#0B1D33] text-3xl md:text-4xl lg:text-6xl leading-[1.2] font-bold tracking-tight"
             >
-              Patna's First{" "}
-              <span className="text-[#1E3A8A]">Delhi NCR–Style</span> Coaching
-              Institute Is Here
+              Patna's First <br />
+              <span className="text-[#1E3A8A] text-4xl md:text-6xl lg:text-7xl block my-2 ">
+                Delhi NCR–Style
+              </span>
+              Coaching Institute Is Here
             </h1>
 
-            <div className="mt-8 space-y-5 text-[#1F2937] text-[17px]">
-              <div className="flex items-start gap-3">
-                <span className="text-2xl mt-0.5">📘</span>
-                <p>Small batches. Real mentors.</p>
+            <div className="mt-4 space-y-2 text-[#1F2937]">
+              {/* Item 1 */}
+              <div className="flex items-start gap-2 group">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
+                  <FaChartLine className="text-3xl" />
+                </div>
+                <div className="pt-2">
+                  <p className="text-[19px]  font-medium">
+                    Small batches. Real mentors.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="text-2xl mt-0.5">📚</span>
-                <p>
-                  A curriculum based on NCERT / CBSE fundamentals, not
-                  shortcuts.
-                </p>
+
+              <hr className="border-gray-200" />
+
+              {/* Item 2 */}
+              <div className="flex items-start gap-2 group">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-emerald-200 group-hover:scale-110 transition-transform duration-300">
+                  <FaUsers className="text-3xl" />
+                </div>
+                <div className="pt-2">
+                  <p className="text-[19px] font-medium">
+                    A curriculum based onNCERT fundamentals, not shortcuts.
+                  </p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <span className="text-2xl mt-0.5">🎯</span>
-                <p>
-                  Book your three free demo classes in Patna and see the
-                  difference before you commit to anything.
-                </p>
+
+              <hr className="border-gray-200" />
+
+              {/* Item 3 */}
+              <div className="flex items-start gap-2 group">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-amber-200 group-hover:scale-110 transition-transform duration-300">
+                  <FaAward className="text-3xl" />
+                </div>
+                <div className="pt-2">
+                  <p className="text-[19px]  font-medium">
+                    Book your three free demo classes in Patna.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +126,7 @@ export default function Hero() {
               />
 
               {/* Scholarship Badge */}
-              <div
+              {/* <div
                 ref={badgeRef}
                 className="absolute -top-6 -left-6 bg-[#48525B] text-white px-7 py-6 rounded-3xl shadow-xl text-center"
               >
@@ -108,7 +137,7 @@ export default function Hero() {
                   SCHOLARSHIP
                 </p>
                 <p className="text-xs mt-1">AVAILABLE</p>
-              </div>
+              </div> */}
             </div>
           </div>
 

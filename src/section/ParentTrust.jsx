@@ -58,7 +58,7 @@ export default function ParentTrust() {
       className="relative bg-[#0B1D33] py-24 md:py-32"
     >
       <div className="max-w-7xl flex flex-col items-center  mx-auto px-6 md:px-10">
-        <div className="max-w-3xl flex flex-col items-center mb-14">
+        <div className="max-w-4xl flex flex-col items-center mb-14">
          
 
           <div className="inline-block px-6 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
@@ -67,7 +67,7 @@ export default function ParentTrust() {
             </p>
           </div>
 
-          <h2 className="font-sarif text-[#FAF8F4] text-3xl md:text-[2.75rem] leading-[1.12] font-semibold">
+          <h2 className="font-sarif text-[#FAF8F4] text-3xl text-center md:text-[2.75rem] leading-[1.12] font-semibold">
             The questions on every parent's mind.
           </h2>
         </div>
@@ -77,7 +77,7 @@ export default function ParentTrust() {
             <div
               key={item.q}
               ref={addCardRef}
-              className="bg-[#0F2540] border border-[#8FA3B0]/15 rounded-md p-8"
+              className="bg-[#0F2540] border border-[#8FA3B0]/15 rounded-[30px] p-8"
             >
               <span className="font-sarif text-[#C9A227] text-4xl leading-none">"</span>
               <h3 className="font-['Fraunces'] italic text-[#FAF8F4] text-xl md:text-2xl leading-snug mt-2">
@@ -91,8 +91,8 @@ export default function ParentTrust() {
         </div>
 
         <a
-          href="#contact"
-          className="inline-block cursor-hover font-sarif text-xs lg:text-xl tracking-widest uppercase text-[#0B1D33] bg-[#C9A227] px-8 py-3.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300 mt-12"
+          href="#top"
+          className="inline-block cursor-hover font-sarif text-xs lg:text-xl tracking-widest uppercase text-[#0B1D33] bg-[#C9A227] px-4 lg:px-8  py-3.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300 mt-12"
         >
           Book Your Free Parent Counselling Session
         </a>

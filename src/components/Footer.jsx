@@ -3,13 +3,16 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer id="contact"  className="bg-[#0A1628] text-[#E7E2D6] pt-16 pb-8 border-t border-[#C9A227]/20">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12">
+    <footer
+      id="contact"
+      className="bg-[#0A1628] text-[#E7E2D6] pt-16 pb-8 border-t border-[#C9A227]/20"
+    >
+      <div className="max-w-[90vw] mx-auto px-6 md:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8 p-6">
           {/* Column 1 - About */}
           <div>
             <h3 className="font-['Fraunces'] text-3xl text-[#C9A227] mb-4">
-              Gurukul
+              Society Gurukul
             </h3>
             <p className="text-[#8FA3B0] leading-relaxed">
               Patna's First Delhi NCR–Style Coaching Institute.
@@ -26,42 +29,43 @@ export default function Footer() {
             <ul className="space-y-3 text-[#8FA3B0]">
               <li>
                 <a
-                  href="#why-gurukul"
+                  href="#programmes"
                   className="hover:text-[#C9A227] transition-colors"
                 >
-                  Why Gurukul
+                  Programmes
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#admissions"
+                  className="hover:text-[#C9A227] transition-colors"
+                >
+                  Admissions
                 </a>
               </li>
               <li>
                 <a
-                  href="#courses"
+                  href="#benefits"
                   className="hover:text-[#C9A227] transition-colors"
                 >
-                  Our Courses
+                  Benefits
                 </a>
               </li>
               <li>
                 <a
-                  href="#results"
+                  href="#campus-life"
                   className="hover:text-[#C9A227] transition-colors"
                 >
-                  Success Stories
+                  Campus Life
                 </a>
               </li>
               <li>
                 <a
-                  href="#faculty"
+                  href="#contact"
                   className="hover:text-[#C9A227] transition-colors"
                 >
-                  Our Mentors
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#demo"
-                  className="hover:text-[#C9A227] transition-colors"
-                >
-                  Book Free Demo
+                  Contact
                 </a>
               </li>
             </ul>
@@ -74,71 +78,20 @@ export default function Footer() {
             </h4>
             <div className="space-y-4 text-[#8FA3B0]">
               <p className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-[#D4AF37] text-lg" />
-                Near Boring Road, Patna, Bihar
+                <FaMapMarkerAlt className="text-[#D4AF37] text-lg shrink-0" />
+                Flat No. 202, Lata Kunj Apartment, W Boring Rd Crossing, Patna,
+                Bihar-800001
               </p>
-
               <p className="flex items-center gap-3">
-                <FaPhoneAlt className="text-[#D4AF37] text-lg" />
+                <FaPhoneAlt className="text-[#D4AF37] text-lg shrink-0" />
                 +91 12345 67890
               </p>
-
               <p className="flex items-center gap-3">
-                <FaEnvelope className="text-[#D4AF37] text-lg" />
-                info@gurukulpatna.com
+                <FaEnvelope className="text-[#D4AF37] text-lg shrink-0" />
+                info@societygurukul.com
               </p>
             </div>
           </div>
-
-          {/* Enquiry Form */}
-            <div className="bg-[#13223A] rounded-2xl p-6">
-              <h5 className="text-[#C9A227] font-medium mb-4">Quick Enquiry</h5>
-              <form 
-                action="/contact.php" 
-                method="POST"
-                className="space-y-4"
-              >
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    placeholder="Your Full Name"
-                    className="w-full px-4 py-3 bg-[#0A1628] border border-[#C9A227]/30 rounded-xl text-white placeholder:text-[#8FA3B0] focus:outline-none focus:border-[#C9A227]"
-                  />
-                </div>
-
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    placeholder="Phone Number"
-                    className="w-full px-4 py-3 bg-[#0A1628] border border-[#C9A227]/30 rounded-xl text-white placeholder:text-[#8FA3B0] focus:outline-none focus:border-[#C9A227]"
-                  />
-                </div>
-
-                <div>
-                  <select
-                    name="interested_in"
-                    required
-                    className="w-full px-4 py-3 bg-[#0A1628] border border-[#C9A227]/30 rounded-xl text-white focus:outline-none focus:border-[#C9A227]"
-                  >
-                    <option value="">Interested In</option>
-                    <option value="Class 5-8">Class 5 - 8</option>
-                    <option value="Class 9-12">Class 9 - 12</option>
-                    <option value="Class 12th Pass Out">Class 12th Pass Out</option>
-                  </select>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3.5 bg-[#C9A227] hover:bg-[#E0BC4A] text-[#0B1D33] font-semibold rounded-xl transition-all active:scale-95"
-                >
-                  Send Enquiry
-                </button>
-              </form>
-            </div>
         </div>
 
         {/* Bottom Bar */}
@@ -149,4 +102,3 @@ export default function Footer() {
     </footer>
   );
 }
-

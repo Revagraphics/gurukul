@@ -75,14 +75,6 @@ export default function KeyBenefits() {
               <span className="text-[#C9A227]">◆</span>Key Benefits
             </p>
           </div>
-          <h2 
-            ref={titleRef}
-            className="font-['Fraunces'] text-[#0B1D33] text-4xl md:text-5xl font-bold tracking-tight"
-          >
-            For Your Child &amp; For You, As a Parent
-          </h2>
-          
-
           
         </div>
 

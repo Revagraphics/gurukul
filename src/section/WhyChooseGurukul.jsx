@@ -123,7 +123,7 @@ export default function WhyChooseGurukul() {
       <div className="max-w-[90vw] mx-auto px-6 md:px-10 grid md:grid-cols-[0.85fr_1.15fr] gap-14 md:gap-20">
         {/* Sticky Intro */}
         <div className="md:sticky md:top-32 h-fit">
-          <div className="inline-block px-6 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
+          <div className="inline-block px-2 lg:px-6 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
             <p className="font-serif text-[#0B1D33] font-bold text-sm md:text-base tracking-[0.3em] uppercase m-0 flex items-center gap-2">
               <span className="text-[#C9A227]">◆</span> Why Society Gurukul
             </p>

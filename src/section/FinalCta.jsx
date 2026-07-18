@@ -7,8 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ctas = [
   { icon: "📞", label: "Book Your Three Free Demo Classes Today", href: "#apply" },
-  { icon: "🎓", label: "Schedule a Free Academic Counselling Session", href: "#contact" },
-  { icon: "✍️", label: "Enquire for Admission — Classes 5th to 12th", href: "#apply" },
+
 ];
 
 export default function FinalCta() {
@@ -31,21 +30,21 @@ export default function FinalCta() {
   }, []);
 
   return (
-    <section id="campus-life"  ref={sectionRef} className="relative bg-[#0B1D33] py-28 md:py-36 overflow-hidden">
+    <section id="campus-life"  ref={sectionRef} className="relative bg-[#F3EEE3] py-16 md:py-18 overflow-hidden">
       <div className="relative z-10 max-w-[90vw] mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-16 items-center">
         
         {/* Left Content */}
         <div ref={headingRef} className="text-left">
           
           <div className="inline-block px-4 py-2 bg-[#C9A227]/10 border border-[#C9A227]/30 rounded-full mb-6">
-            <p className="font-serif text-[#C9A227] font-bold text-sm md:text-base tracking-[0.3em] uppercase m-0 flex items-center gap-1">
+            <p className="font-serif text-[#000] font-bold text-sm md:text-base tracking-[0.3em] uppercase m-0 flex items-center gap-1">
               <span className="text-[#C9A227]">◆</span>Enrollment Open Classes 5th–12th
             </p>
           </div>
-          <h2 className="font-sarif text-[#FAF8F4] text-3xl md:text-5xl leading-[1.15] font-semibold">
+          <h2 className="font-sarif text-[#000] text-3xl md:text-5xl leading-[1.15] font-semibold">
             Patna's students deserve more than another crowded coaching centre.
           </h2>
-          <p className="font-sarif text-[#E7E2D6]/80 text-base md:text-lg mt-6 leading-relaxed">
+          <p className="font-sarif text-[#000]/80 text-base md:text-lg mt-6 leading-relaxed">
             They deserve mentors who know their name. Society Gurukul's Patna centre is now open for enrollment for Classes 5th to 12th.
           </p>
 
@@ -54,8 +53,8 @@ export default function FinalCta() {
               <a
                 key={c.label}
                 ref={addCtaRef}
-                href={c.href}
-                className={`w-full flex items-center justify-start gap-3 font-sarif text-xs md:text-sm tracking-widest uppercase px-7 py-4 rounded-sm transition-colors duration-300 ${
+                href="#top"
+                className={`w-full flex items-center justify-start gap-2 font-sarif text-xs md:text-sm tracking-widest uppercase px-2 lg:px-7 py-4 rounded-md transition-colors duration-300 ${
                   i === 0
                     ? "bg-[#C9A227] text-[#0B1D33] hover:bg-[#E0BC4A]"
                     : "border border-[#FAF8F4]/30 text-[#FAF8F4] hover:border-[#C9A227] hover:text-[#C9A227]"

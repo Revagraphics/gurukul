@@ -105,7 +105,7 @@ export default function AcademicPrograms() {
             <div
               key={p.tier}
               ref={addCardRef}
-              className={`rounded-md p-8 flex flex-col h-full ${
+              className={`rounded-[30px] p-8 flex flex-col h-full ${
                 p.featured
                   ? "bg-[#0B1D33] border-2 border-[#8FA3B0] md:-translate-y-4 "
                   : "bg-[#0F2540] border-2 border-[#8FA3B0] md:-translate-y-4"
@@ -145,8 +145,8 @@ export default function AcademicPrograms() {
         </div>
 
         <a
-          href="#contact"
-          className="inline-block cursor-hover font-sarif text-xs lg:text-xl tracking-widest uppercase text-[#0B1D33] bg-[#C9A227] px-8 py-3.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300 mt-12"
+          href="#top"
+          className="inline-block cursor-hover font-sarif text-xs lg:text-xl tracking-widest uppercase text-[#0B1D33] bg-[#C9A227] px-3 lg:px-8 py-3.5 rounded-md hover:bg-[#E0BC4A] transition-colors duration-300 mt-12"
         >
          Not sure which program fits your child? Get a free 1-on-1 recommendation →
         </a>
