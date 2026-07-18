@@ -95,7 +95,7 @@ export default function Hero() {
                 </div>
                 <div className="pt-2">
                   <p className="text-[19px] font-medium">
-                    A curriculum based onNCERT fundamentals, not shortcuts.
+                    A curriculum based on NCERT fundamentals, not shortcuts.
                   </p>
                 </div>
               </div>
