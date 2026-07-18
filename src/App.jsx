@@ -19,7 +19,7 @@ export default function App() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 1000);
+    const timer = setTimeout(() => setShowPopup(true), 500);
     return () => clearTimeout(timer);
   }, []);
 
