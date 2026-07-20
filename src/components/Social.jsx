@@ -9,23 +9,13 @@ const social = [
   {
     icon: <FaWhatsapp />,
     title: "WhatsApp",
-    link: "https://wa.me/+91 9296906663",
-    content: (
-      <div className="text-center">
-        <img
-          src="/qr-whatsapp.png"
-          alt="WhatsApp QR"
-          className="h-32 w-32 mx-auto"
-        />
-        <p className="mt-2 text-xs">Scan to Chat</p>
-      </div>
-    ),
+    link: "https://wa.me/9296906663",
   },
 
   {
     icon: <FaPhoneAlt />,
     title: "Call Us",
-    link: "tel:919296906663",
+    link: "tel:9296906663",
     content: (
       <div>
         <p className="font-semibold">+91 9296906663</p>

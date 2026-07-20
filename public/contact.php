@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 // Update this to your live production domain
-header('Access-Control-Allow-Origin: https://gurukul-tau-eight.vercel.app');
-// header('Access-Control-Allow-Origin: https://societygurukul.com');
+
+
+header('Access-Control-Allow-Origin: https://societygurukul.com');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Accept');
 
@@ -11,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+     
 $input = file_get_contents('php://input');
 $data = json_decode($input, true);
 
@@ -134,3 +136,6 @@ if ($success) {
     echo json_encode(['success' => false, 'message' => 'Unable to send inquiry.']);
 }
 ?>
+
+
+

@@ -84,7 +84,7 @@ export default function Footer() {
               </p>
               <p className="flex items-center gap-3">
                 <FaPhoneAlt className="text-[#D4AF37] text-lg shrink-0" />
-                +91 9296906663
+                9296906663
               </p>
               <p className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4AF37] text-lg shrink-0" />
