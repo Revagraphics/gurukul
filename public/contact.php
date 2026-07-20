@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 // Update this to your live production domain
-header('Access-Control-Allow-Origin: https://societygurukul.com');
+header('Access-Control-Allow-Origin: https://gurukul-tau-eight.vercel.app');
+// header('Access-Control-Allow-Origin: https://societygurukul.com');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Accept');
 
@@ -17,6 +18,8 @@ if (!is_array($data)) {
     $data = $_POST;
 }
 
+
+
 // =========================
 // CLEAN INPUTS
 // =========================
@@ -28,6 +31,8 @@ $source = isset($data['source']) ? trim($data['source']) : 'website';
 // =========================
 // RECEIVER EMAILS (Update these)
 // =========================
+
+
 $recipients = [
     'info@societygurukul.com , sourabhnegi557@gmail.com', // Update to your official email
 ];
@@ -115,6 +120,9 @@ foreach ($recipients as $recipient) {
         $success = false;
     }
 }
+
+
+
 
 // =========================
 // RESPONSE
